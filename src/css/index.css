@@ -1,0 +1,424 @@
+
+/********************  
+Fonts
+********************/
+
+@import url('https://fonts.googleapis.com/css?family=Imprima|Permanent+Marker|Swanky+and+Moo+Moo|Pacifico');
+
+/********************  
+  General 
+********************/
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Imprima', sans-serif;
+  color: #333;
+}
+
+/********************  
+  Buttons 
+********************/
+
+.btn {
+  color: white;
+  background-color: #44403A;
+  border: 1px solid #44403A;
+  border-radius: 5px;
+  padding: 8px 15px;
+  cursor: pointer;
+  outline: none;
+  transition: 0.2s;
+  font-family: 'Imprima', sans-serif;
+  font-size: 0.9em;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #333;
+}
+
+.btn:active, .btn-focus {
+  outline: none;
+  background-color: #44403A;
+}
+
+.btn-add {
+  position: relative;
+  float: right;
+  top: 8px;
+  right: 15px;
+}
+
+.editListItemBtns {
+  position: relative;
+  float: right;
+  top: 8px;
+  right: 30px;
+}
+
+.btn-recipe-div  {
+  border: none;
+  margin-right: 0.25%;
+}
+
+.btn-listItem {
+  border: none;
+  margin-right: 10px;
+}
+
+.btn-recipe-div-save, .btn-listItem-save {
+  background-color: #7DAF74;
+}
+
+.btn-recipe-div-clear, .btn-listItem-cancel {
+  background-color: #C33F3F; 
+}
+
+.btn-recipe-div-close {
+  background-color: #444; 
+}
+
+.btn-rEditRecipe {
+  background-color: #7DAF74;
+  margin-right: 10px;
+}
+
+.btn-rDeleteRecipe {
+  background-color: #C33F3F; 
+}
+
+/********************  
+  Font-awesome
+********************/
+
+.fa-cutlery {
+  position: relative;
+  top: -1px;
+  padding: 10px;
+  font-size: 0.8em;
+}
+
+.fa-trash {
+  color: #C33F3F;
+  font-size: 0.7em;
+  position: absolute;
+  top: 10px;
+  right: 0;
+  text-align: right;
+  cursor: pointer;
+}
+
+.fa-pencil {
+  color: #7DAF74;
+  font-size: 0.7em;
+  position: absolute;
+  top: 10px;
+  right: 8%;
+  text-align: right;
+  cursor: pointer;
+}
+
+.fa-trash:hover, .fa-pencil:hover {
+  color: #333;
+}
+
+.header-plus {
+  position: relative;
+  top: 1px;
+  padding-left: 10px;
+}
+
+.recipe-plus {
+  position: absolute;
+  color: #7DAF74;
+  cursor: pointer;
+  font-size: 1.75em;
+  padding-left: 1%;
+  padding-top: 9px;
+}
+
+.recipe-plus:hover {
+  color: #608659;
+}
+
+.fa-arrow-down {
+  color: #C33F3F;
+  position: relative;
+  float: right;
+  cursor: pointer;
+}
+
+.fa-arrow-down:hover {
+  color: #333;
+}
+
+/********************  
+  Header
+********************/
+
+.header {
+  color: #fff;
+}
+
+.menu {
+  background: #7DAF74;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  box-shadow: 0 3px 7px rgba(0,0,0,0.20), 0 1px 1px rgba(0,0,0,0.20);
+}
+
+.menu h1 {
+  margin: 0;
+  padding: 5px;
+  font-size: 1.5em;
+  font-weight: lighter;
+  text-shadow: 1px 2px rgba(0,0,0,0.3);
+  display: inline-block;
+  font-family: 'Pacifico', cursive;
+}
+
+
+/********************  
+  Title Box
+********************/
+
+.title-box {
+  background-image: url('/images/header-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 230px;
+}
+
+.title-box h2 {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  padding-top: 120px;
+  position: relative;
+  z-index: 1;
+}
+
+.title-box:before {
+  content: '';
+  position: absolute;
+  background-image: linear-gradient(to bottom right,#413C35,#413C35);
+  top: 49px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: .6; 
+  max-height: 180px;
+}
+
+/********************  
+  Recipes Index Div
+********************/
+
+.recipesDiv {
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.recipeDiv {
+  width: 40%;
+  margin: 5%;
+  margin-top: 30px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+img {
+  width: 100%;
+}
+
+.rDescription {
+  font-style: italic;
+  color: #000;
+  min-height: 75px;
+}
+
+.rInstructions, .rIngredients {
+  padding-left: 15px;
+}
+
+.hide {
+  margin-bottom: 5px;
+  height: 50px;
+  overflow: hidden;
+  background:  -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,0.5) 90%, rgba(200,200,200,0.2) 100%);
+}
+
+.rH4 {
+  margin-bottom:  5px;
+}
+
+.expand:hover {
+  box-shadow:  0px 1px 5px rgba(0,0,0,0.1);
+  cursor: pointer;
+}
+
+.rEditDeleteDiv {
+  margin-top: 20px;
+}
+
+/********************  
+  Edit Recipe Window
+********************/
+
+.editRecipe {
+  z-index: 2;
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: whitesmoke;
+  background-image: url('/images/editRecipe-bg.png');
+  background-blend-mode: screen;
+  opacity: 0;
+  overflow: scroll;
+}
+
+.editRecipeTitle {
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+
+}
+
+.editRecipeDiv {
+  display: inline-block;
+  vertical-align: top;
+  margin: 4%;
+  width: 25%;
+}
+
+.editRecipeDiv p {
+  margin: 0;
+  margin-bottom: 2px;
+}
+
+.editRecipeDiv h3 {
+  vertical-align: top;
+  margin-top: -8%;
+
+}
+
+.edit-btn-div {
+  text-align: right;
+  margin: 3% 5.5% 0% 0%;
+}
+
+input, textarea {
+  width: 90%;
+  height: 2em;
+  border: 1px solid #bbb;
+  box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.1);
+  border-radius: 5px;
+  font-size: 1.2em;
+  font-family: 'Imprima', sans-serif;
+  padding-left: 15px; 
+  display: inline-block;
+  margin-bottom: 2%;
+}
+
+textarea {
+  padding-top: 17px;
+  height: 4em;
+  resize: vertical;
+}
+
+/********************  
+  AddedIngredients
+********************/
+
+.addedIngredients {
+  position: relative;
+  font-family: "Swanky and Moo Moo", cursive;
+  font-size: 1.6em;
+  color: #333;
+}
+
+.addedInstructions {
+  position: relative;
+  font-family: "Swanky and Moo Moo", cursive;
+  font-size: 1.2em;
+}
+
+.listItem {
+  width: 85%;
+  padding: 0;
+  margin: 0;
+  margin-top: 15px;
+}
+
+/********************  
+  Edit List Item
+********************/
+
+#editListItemDiv {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.editItemH3 {
+  color: white;
+  font-size: 2em;
+  text-shadow: 0px 2px #333;
+}
+
+.editListItem {
+  width: 500px;
+  margin: auto;
+  margin-top: 20%;
+}
+
+.editTextArea {
+  resize: vertical;
+}
+
+
+/********************  
+  Footer
+********************/
+
+.footer{
+  background: #7DAF74;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  margin-top: 20px;
+  text-shadow: 1px 2px rgba(0,0,0,0.1);
+}
+
+.footer-span {
+  font-weight: bold;
+}
+
+.footer a {
+  color: #fff;
+  font-weight: bold;
+  transition: 0.4s;
+  text-shadow: none;
+}
+
+.footer a:hover {
+  color: #413C35;
+  text-decoration: none;
+}
+
+@media (max-width: 800px) {
+  .recipeDiv {
+    width: 90%;
+    display: block;
+  }
+}
